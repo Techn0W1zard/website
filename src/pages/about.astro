@@ -3,104 +3,173 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 ---
 
-<Layout title="About" description="Learn about TechnoWizard - your partner in innovative software solutions">
+<Layout title="About" description="TechnoWizard - Building Revenue-Generating Software Products">
   <Navigation />
   
   <main class="pt-20">
     <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-blue-600/10 to-purple-600/10">
-      <div class="container mx-auto px-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-center mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-          About TechnoWizard
-        </h1>
-        <p class="text-xl text-center text-gray-300 max-w-3xl mx-auto">
-          Pioneering Software Solutions for Tomorrow's Challenges
-        </p>
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center">
+          <p class="font-mono text-sm text-[var(--color-taupe)] tracking-wider uppercase mb-4">
+            About TechnoWizard
+          </p>
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-[var(--color-charcoal)] mb-6">
+            Building Products That Matter
+          </h1>
+          <p class="text-xl text-[var(--color-grey-medium)] max-w-3xl mx-auto leading-relaxed">
+            We're not just another software consultancy. We're product builders focused on creating revenue-generating SaaS applications.
+          </p>
+        </div>
       </div>
     </section>
     
-    <!-- Company Story -->
+    <!-- Vision Section -->
     <section class="py-20">
       <div class="container mx-auto px-6 max-w-4xl">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-            <p class="text-gray-300 mb-4">
-              TechnoWizard was founded with a vision to bridge the gap between innovative ideas and cutting-edge technology. Starting with our flagship project, Sorteo Club - a revolutionary private lottery platform for Mexico - we've demonstrated our ability to create secure, scalable solutions for complex challenges.
+        <div class="prose prose-lg max-w-none">
+          <div class="mb-16">
+            <h2 class="text-3xl font-display font-semibold mb-6 text-[var(--color-charcoal)]">Our Vision</h2>
+            <p class="text-lg text-[var(--color-grey-medium)] leading-relaxed mb-4">
+              TechnoWizard was founded with a clear mission: to transform innovative ideas into successful software products. We believe that great software should not only solve problems but also generate sustainable revenue from day one.
             </p>
-            <p class="text-gray-300">
-              Today, we continue to expand our horizons, working on diverse projects that push the boundaries of what's possible with software. Our mission is simple: transform your ideas into revenue-generating software solutions.
+            <p class="text-lg text-[var(--color-grey-medium)] leading-relaxed">
+              Our approach combines rapid development with strategic thinking. We don't just build what you ask for – we help you build what your market needs. This philosophy has guided us from our flagship product, Sorteo Club, to every new venture we undertake.
             </p>
           </div>
-          <div class="bg-gradient-to-br from-blue-600/20 to-purple-600/20 p-8 rounded-2xl border border-gray-800">
-            <div class="space-y-4">
-              <div>
-                <h3 class="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">1+</h3>
-                <p class="text-gray-400">Years of Innovation</p>
-              </div>
-              <div>
-                <h3 class="text-5xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">100%</h3>
-                <p class="text-gray-400">Client Satisfaction</p>
-              </div>
-              <div>
-                <h3 class="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">∞</h3>
-                <p class="text-gray-400">Possibilities</p>
-              </div>
+          
+          <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">What We Do</h3>
+              <p class="text-[var(--color-grey-medium)] leading-relaxed mb-4">
+                We specialize in building SaaS products and digital platforms that are designed to scale. From initial concept to market launch, we handle the entire product lifecycle.
+              </p>
+              <p class="text-[var(--color-grey-medium)] leading-relaxed">
+                Our expertise spans full-stack development, cloud architecture, payment integrations, and growth engineering – everything needed to launch a successful digital product.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">How We Work</h3>
+              <p class="text-[var(--color-grey-medium)] leading-relaxed mb-4">
+                We believe in rapid iteration and market validation. Our process starts with understanding your vision and your market, then quickly building an MVP to test assumptions.
+              </p>
+              <p class="text-[var(--color-grey-medium)] leading-relaxed">
+                We measure success not by lines of code written, but by user engagement and revenue generated. This focus keeps us aligned with your business goals.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- Values -->
-    <section class="py-20 bg-gray-900">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <!-- Principles Section -->
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          Our Principles
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            <div class="inline-block p-4 bg-[var(--color-cream)] rounded-lg border border-[var(--color-pearl)] mb-6">
+              <svg class="w-8 h-8 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Innovation</h3>
-            <p class="text-gray-400">Constantly pushing boundaries to deliver cutting-edge solutions</p>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Revenue First
+            </h3>
+            <p class="text-[var(--color-grey-medium)] leading-relaxed">
+              Every feature we build is evaluated for its impact on user value and revenue potential.
+            </p>
           </div>
           
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            <div class="inline-block p-4 bg-[var(--color-cream)] rounded-lg border border-[var(--color-pearl)] mb-6">
+              <svg class="w-8 h-8 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Security</h3>
-            <p class="text-gray-400">Building secure, reliable systems you can trust</p>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Speed to Market
+            </h3>
+            <p class="text-[var(--color-grey-medium)] leading-relaxed">
+              Launch fast, learn quickly, iterate constantly. Time to market is critical for success.
+            </p>
           </div>
           
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <div class="inline-block p-4 bg-[var(--color-cream)] rounded-lg border border-[var(--color-pearl)] mb-6">
+              <svg class="w-8 h-8 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Performance</h3>
-            <p class="text-gray-400">Optimized solutions that scale with your business</p>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Built to Scale
+            </h3>
+            <p class="text-[var(--color-grey-medium)] leading-relaxed">
+              Architecture that grows with you. From 10 users to 10,000 without breaking a sweat.
+            </p>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- CTA -->
+    <!-- Experience Section -->
     <section class="py-20">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Let's Build Something Amazing Together</h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Whether you have a groundbreaking idea or need expert guidance, we're here to help turn your vision into reality.
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          Our Expertise
+        </h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[var(--color-cream-light)] p-6 rounded-lg border border-[var(--color-pearl)]">
+            <h3 class="font-mono text-sm text-[var(--color-taupe)] mb-2 uppercase tracking-wider">Frontend</h3>
+            <p class="text-[var(--color-grey-dark)]">React, Vue, Astro, Next.js, TypeScript</p>
+          </div>
+          
+          <div class="bg-[var(--color-cream-light)] p-6 rounded-lg border border-[var(--color-pearl)]">
+            <h3 class="font-mono text-sm text-[var(--color-taupe)] mb-2 uppercase tracking-wider">Backend</h3>
+            <p class="text-[var(--color-grey-dark)]">Node.js, Python, Go, PostgreSQL, Redis</p>
+          </div>
+          
+          <div class="bg-[var(--color-cream-light)] p-6 rounded-lg border border-[var(--color-pearl)]">
+            <h3 class="font-mono text-sm text-[var(--color-taupe)] mb-2 uppercase tracking-wider">Cloud</h3>
+            <p class="text-[var(--color-grey-dark)]">AWS, Vercel, Docker, Kubernetes</p>
+          </div>
+          
+          <div class="bg-[var(--color-cream-light)] p-6 rounded-lg border border-[var(--color-pearl)]">
+            <h3 class="font-mono text-sm text-[var(--color-taupe)] mb-2 uppercase tracking-wider">Payments</h3>
+            <p class="text-[var(--color-grey-dark)]">Stripe, PayPal, Crypto, Subscriptions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 text-center max-w-4xl">
+        <h2 class="text-3xl font-display font-semibold mb-6 text-[var(--color-charcoal)]">
+          Let's Build Something Great
+        </h2>
+        <p class="text-xl text-[var(--color-grey-medium)] mb-10 max-w-2xl mx-auto">
+          Ready to turn your idea into a revenue-generating product? Let's talk about your vision.
         </p>
-        <a href="/contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all">
-          Start Your Project
+        <a href="/contact" class="inline-block px-8 py-4 bg-[var(--color-charcoal)] text-[var(--color-cream)] rounded-md font-medium hover:bg-[var(--color-grey-dark)] transition-colors duration-200">
+          Start a Conversation
         </a>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  .font-display {
+    font-family: var(--font-display);
+  }
+</style>

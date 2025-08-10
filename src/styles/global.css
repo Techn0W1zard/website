@@ -2,9 +2,24 @@
 
 @layer base {
   :root {
-    --color-primary: #0066FF;
-    --color-secondary: #6B46C1;
-    --color-accent: #00D4FF;
+    /* Primary Colors - Sophisticated Cream Palette */
+    --color-cream: #FAF9F6;
+    --color-cream-light: #FDFCFA;
+    --color-charcoal: #2C3333;
+    --color-grey-dark: #3E4444;
+    --color-grey-medium: #5C6366;
+    
+    /* Accent Colors */
+    --color-taupe: #8B7355;
+    --color-sage: #87A96B;
+    --color-stone: #A8A29E;
+    --color-pearl: #E5E4E2;
+    
+    /* Functional Colors */
+    --color-error: #B91C1C;
+    --color-warning: #92400E;
+    --color-success: #166534;
+    --color-info: #1E40AF;
   }
   
   html {
@@ -12,6 +27,30 @@
   }
   
   body {
-    @apply bg-gray-950 text-gray-100 antialiased;
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    @apply antialiased;
+    position: relative;
+  }
+  
+  /* Subtle texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(44, 51, 51, 0.01) 2px,
+        rgba(44, 51, 51, 0.01) 4px
+      );
+    pointer-events: none;
   }
 }

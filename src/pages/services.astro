@@ -3,178 +3,183 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 ---
 
-<Layout title="Services" description="Explore TechnoWizard's comprehensive software development services">
+<Layout title="Services" description="TechnoWizard - SaaS Development & Product Launch Services">
   <Navigation />
   
   <main class="pt-20">
     <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-purple-600/10 to-cyan-600/10">
-      <div class="container mx-auto px-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-center mb-6 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-          Our Services
-        </h1>
-        <p class="text-xl text-center text-gray-300 max-w-3xl mx-auto">
-          Comprehensive software solutions tailored to your unique business needs
-        </p>
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center">
+          <p class="font-mono text-sm text-[var(--color-taupe)] tracking-wider uppercase mb-4">
+            Our Services
+          </p>
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-[var(--color-charcoal)] mb-6">
+            From Idea to Revenue
+          </h1>
+          <p class="text-xl text-[var(--color-grey-medium)] max-w-3xl mx-auto leading-relaxed">
+            Comprehensive product development services designed to get your SaaS to market quickly and efficiently.
+          </p>
+        </div>
       </div>
     </section>
     
     <!-- Services Grid -->
     <section class="py-20">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <!-- Custom Software Development -->
-          <div class="bg-gradient-to-br from-blue-600/10 to-purple-600/10 p-8 rounded-2xl border border-gray-800 hover:border-blue-500 transition-all">
-            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- SaaS Development -->
+          <div class="bg-[var(--color-cream-light)] p-10 rounded-lg border border-[var(--color-pearl)]">
+            <div class="mb-6">
+              <span class="font-mono text-sm text-[var(--color-taupe)] uppercase tracking-wider">01</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Custom Software Development</h3>
-            <p class="text-gray-300 mb-4">
-              Transform your unique business requirements into powerful, scalable software solutions. We specialize in building custom applications that perfectly align with your workflows and objectives.
+            <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">
+              SaaS Product Development
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-6 leading-relaxed">
+              End-to-end development of subscription-based software products with all the essentials built-in.
             </p>
-            <ul class="space-y-2 text-gray-400">
+            <ul class="space-y-3 text-[var(--color-grey-dark)]">
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Enterprise applications
+                <span>User authentication & authorization</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                SaaS platforms
+                <span>Subscription & payment processing</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                API development
+                <span>Admin dashboard & analytics</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                System integrations
+                <span>API development & documentation</span>
               </li>
             </ul>
           </div>
           
-          <!-- Mobile App Development -->
-          <div class="bg-gradient-to-br from-purple-600/10 to-cyan-600/10 p-8 rounded-2xl border border-gray-800 hover:border-purple-500 transition-all">
-            <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-cyan-600 rounded-xl flex items-center justify-center mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
+          <!-- MVP Development -->
+          <div class="bg-[var(--color-cream-light)] p-10 rounded-lg border border-[var(--color-pearl)]">
+            <div class="mb-6">
+              <span class="font-mono text-sm text-[var(--color-taupe)] uppercase tracking-wider">02</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Mobile Application Development</h3>
-            <p class="text-gray-300 mb-4">
-              Create engaging mobile experiences that your users will love. We develop native and cross-platform applications that deliver exceptional performance and user experience.
+            <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">
+              MVP & Rapid Prototyping
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-6 leading-relaxed">
+              Validate your idea quickly with a functional prototype that can evolve into a full product.
             </p>
-            <ul class="space-y-2 text-gray-400">
+            <ul class="space-y-3 text-[var(--color-grey-dark)]">
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                iOS & Android native apps
+                <span>2-4 week development sprints</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Cross-platform solutions
+                <span>Core feature implementation</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Progressive Web Apps
+                <span>User testing & feedback loops</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                App store deployment
+                <span>Scalable foundation architecture</span>
               </li>
             </ul>
           </div>
           
-          <!-- Cloud Solutions -->
-          <div class="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 p-8 rounded-2xl border border-gray-800 hover:border-cyan-500 transition-all">
-            <div class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-              </svg>
+          <!-- Product Strategy -->
+          <div class="bg-[var(--color-cream-light)] p-10 rounded-lg border border-[var(--color-pearl)]">
+            <div class="mb-6">
+              <span class="font-mono text-sm text-[var(--color-taupe)] uppercase tracking-wider">03</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Cloud Solutions & Infrastructure</h3>
-            <p class="text-gray-300 mb-4">
-              Leverage the power of cloud computing to scale your business efficiently. We design and implement cloud architectures that are secure, reliable, and cost-effective.
+            <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">
+              Product Strategy & Consulting
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-6 leading-relaxed">
+              Strategic guidance to ensure your product meets market needs and generates revenue.
             </p>
-            <ul class="space-y-2 text-gray-400">
+            <ul class="space-y-3 text-[var(--color-grey-dark)]">
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Cloud migration services
+                <span>Market research & validation</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Serverless architectures
+                <span>Monetization strategy</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                DevOps & CI/CD
+                <span>Feature prioritization</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Cloud security
+                <span>Go-to-market planning</span>
               </li>
             </ul>
           </div>
           
-          <!-- Consulting -->
-          <div class="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 p-8 rounded-2xl border border-gray-800 hover:border-blue-500 transition-all">
-            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
+          <!-- Technical Architecture -->
+          <div class="bg-[var(--color-cream-light)] p-10 rounded-lg border border-[var(--color-pearl)]">
+            <div class="mb-6">
+              <span class="font-mono text-sm text-[var(--color-taupe)] uppercase tracking-wider">04</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Technical Consulting</h3>
-            <p class="text-gray-300 mb-4">
-              Get expert guidance on technology strategy, architecture decisions, and digital transformation. We help you make informed decisions that drive business growth.
+            <h3 class="text-2xl font-display font-semibold mb-4 text-[var(--color-charcoal)]">
+              Technical Architecture
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-6 leading-relaxed">
+              Build on a foundation that scales with your success, from day one to IPO.
             </p>
-            <ul class="space-y-2 text-gray-400">
+            <ul class="space-y-3 text-[var(--color-grey-dark)]">
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Technology assessment
+                <span>Cloud-native architecture</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Architecture planning
+                <span>Microservices & containerization</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Digital transformation
+                <span>Security & compliance</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                Team training
+                <span>Performance optimization</span>
               </li>
             </ul>
           </div>
@@ -182,57 +187,154 @@ import Navigation from '../components/Navigation.astro';
       </div>
     </section>
     
-    <!-- Process Section -->
-    <section class="py-20 bg-gray-900">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Development Process</h2>
-        <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
-              1
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Discovery</h3>
-            <p class="text-gray-400">Understanding your requirements and business goals</p>
-          </div>
+    <!-- Process Timeline -->
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          Our Development Process
+        </h2>
+        
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-[var(--color-pearl)]"></div>
           
-          <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
-              2
+          <!-- Timeline items -->
+          <div class="space-y-12">
+            <div class="relative flex items-start">
+              <div class="absolute left-8 w-4 h-4 bg-[var(--color-cream)] border-2 border-[var(--color-taupe)] rounded-full -translate-x-1/2"></div>
+              <div class="ml-20">
+                <div class="font-mono text-sm text-[var(--color-taupe)] mb-2">Week 1-2</div>
+                <h3 class="text-xl font-display font-semibold mb-2 text-[var(--color-charcoal)]">Discovery & Planning</h3>
+                <p class="text-[var(--color-grey-medium)]">Market research, user interviews, technical requirements, and project roadmap creation.</p>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Design</h3>
-            <p class="text-gray-400">Creating intuitive interfaces and robust architectures</p>
+            
+            <div class="relative flex items-start">
+              <div class="absolute left-8 w-4 h-4 bg-[var(--color-cream)] border-2 border-[var(--color-taupe)] rounded-full -translate-x-1/2"></div>
+              <div class="ml-20">
+                <div class="font-mono text-sm text-[var(--color-taupe)] mb-2">Week 3-6</div>
+                <h3 class="text-xl font-display font-semibold mb-2 text-[var(--color-charcoal)]">MVP Development</h3>
+                <p class="text-[var(--color-grey-medium)]">Core feature development, basic UI/UX implementation, and initial testing.</p>
+              </div>
+            </div>
+            
+            <div class="relative flex items-start">
+              <div class="absolute left-8 w-4 h-4 bg-[var(--color-cream)] border-2 border-[var(--color-taupe)] rounded-full -translate-x-1/2"></div>
+              <div class="ml-20">
+                <div class="font-mono text-sm text-[var(--color-taupe)] mb-2">Week 7-10</div>
+                <h3 class="text-xl font-display font-semibold mb-2 text-[var(--color-charcoal)]">Beta Launch</h3>
+                <p class="text-[var(--color-grey-medium)]">Limited release to early users, feedback collection, and rapid iteration.</p>
+              </div>
+            </div>
+            
+            <div class="relative flex items-start">
+              <div class="absolute left-8 w-4 h-4 bg-[var(--color-cream)] border-2 border-[var(--color-taupe)] rounded-full -translate-x-1/2"></div>
+              <div class="ml-20">
+                <div class="font-mono text-sm text-[var(--color-taupe)] mb-2">Week 11-12</div>
+                <h3 class="text-xl font-display font-semibold mb-2 text-[var(--color-charcoal)]">Public Launch</h3>
+                <p class="text-[var(--color-grey-medium)]">Full market release, marketing activation, and growth optimization.</p>
+              </div>
+            </div>
           </div>
-          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Technologies -->
+    <section class="py-20">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          Technologies We Use
+        </h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
-              3
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">React</span>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Development</h3>
-            <p class="text-gray-400">Building your solution with clean, scalable code</p>
           </div>
-          
           <div class="text-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
-              4
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Next.js</span>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Deployment</h3>
-            <p class="text-gray-400">Launching and maintaining your application</p>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Node.js</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Python</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">AWS</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Docker</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Kubernetes</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Stripe</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">Redis</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">GraphQL</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] mb-2">
+              <span class="font-mono text-sm text-[var(--color-grey-dark)]">TypeScript</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
     
     <!-- CTA -->
-    <section class="py-20">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Ideas?</h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Let's discuss how TechnoWizard can help bring your software vision to life.
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 text-center max-w-4xl">
+        <h2 class="text-3xl font-display font-semibold mb-6 text-[var(--color-charcoal)]">
+          Ready to Launch Your Product?
+        </h2>
+        <p class="text-xl text-[var(--color-grey-medium)] mb-10 max-w-2xl mx-auto">
+          Let's discuss your project and create a roadmap to success.
         </p>
-        <a href="/contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all">
-          Get Started Today
+        <a href="/contact" class="inline-block px-8 py-4 bg-[var(--color-charcoal)] text-[var(--color-cream)] rounded-md font-medium hover:bg-[var(--color-grey-dark)] transition-colors duration-200">
+          Get Started
         </a>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  .font-display {
+    font-family: var(--font-display);
+  }
+</style>

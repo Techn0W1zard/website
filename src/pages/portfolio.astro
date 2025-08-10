@@ -3,91 +3,124 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 ---
 
-<Layout title="Portfolio" description="Explore TechnoWizard's portfolio of innovative software projects">
+<Layout title="Portfolio" description="TechnoWizard - Our SaaS Products and Success Stories">
   <Navigation />
   
   <main class="pt-20">
     <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-cyan-600/10 to-blue-600/10">
-      <div class="container mx-auto px-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-center mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-          Our Portfolio
-        </h1>
-        <p class="text-xl text-center text-gray-300 max-w-3xl mx-auto">
-          Showcasing our innovative solutions and successful projects
-        </p>
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center">
+          <p class="font-mono text-sm text-[var(--color-taupe)] tracking-wider uppercase mb-4">
+            Portfolio
+          </p>
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-[var(--color-charcoal)] mb-6">
+            Products We've Built
+          </h1>
+          <p class="text-xl text-[var(--color-grey-medium)] max-w-3xl mx-auto leading-relaxed">
+            From MVPs to market leaders, explore the SaaS products and platforms we've launched.
+          </p>
+        </div>
       </div>
     </section>
     
-    <!-- Featured Project -->
+    <!-- Featured Project - Sorteo Club -->
     <section class="py-20">
-      <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl font-bold text-center mb-12">Featured Project</h2>
-          
-          <div class="bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl overflow-hidden border border-gray-800">
-            <div class="grid md:grid-cols-2 gap-0">
-              <div class="p-8 md:p-12">
-                <div class="inline-block px-4 py-2 bg-purple-600/20 rounded-full text-purple-400 text-sm font-medium mb-4">
-                  Gaming & Entertainment
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl font-display font-semibold text-[var(--color-charcoal)] mb-4">
+            Flagship Product
+          </h2>
+          <p class="text-lg text-[var(--color-grey-medium)]">
+            Our crown jewel demonstrating full product lifecycle execution
+          </p>
+        </div>
+        
+        <div class="bg-[var(--color-cream)] rounded-lg border border-[var(--color-pearl)] overflow-hidden">
+          <div class="grid md:grid-cols-5 gap-0">
+            <div class="md:col-span-3 p-12">
+              <div class="mb-6">
+                <span class="font-mono text-xs text-[var(--color-taupe)] uppercase tracking-wider">
+                  Gaming & Entertainment • 2023-Present
+                </span>
+              </div>
+              
+              <h3 class="text-3xl font-display font-bold mb-4 text-[var(--color-charcoal)]">
+                Sorteo Club
+              </h3>
+              
+              <p class="text-lg text-[var(--color-grey-medium)] mb-8 leading-relaxed">
+                A secure, compliant lottery platform for the Mexican market. Built from scratch to handle real-money transactions, live draws, and thousands of concurrent users with zero downtime.
+              </p>
+              
+              <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h4 class="font-display font-semibold text-[var(--color-charcoal)] mb-4">Key Achievements</h4>
+                  <ul class="space-y-3 text-[var(--color-grey-dark)]">
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span>10,000+ active users in first year</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span>$1M+ in transactions processed</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span>99.9% uptime maintained</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 text-[var(--color-sage)] mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span>Full regulatory compliance</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="text-3xl font-bold mb-4">Sorteo Club</h3>
-                <p class="text-gray-300 mb-6">
-                  A revolutionary private lottery platform designed specifically for the Mexican market. Sorteo Club combines cutting-edge security with an intuitive user experience to create a trusted, compliant gaming platform.
-                </p>
                 
-                <div class="space-y-4 mb-8">
-                  <div>
-                    <h4 class="font-semibold text-purple-400 mb-2">Key Features</h4>
-                    <ul class="space-y-2 text-gray-400">
-                      <li class="flex items-start">
-                        <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        Secure payment processing
-                      </li>
-                      <li class="flex items-start">
-                        <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        Real-time draw system
-                      </li>
-                      <li class="flex items-start">
-                        <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        Compliance with Mexican regulations
-                      </li>
-                      <li class="flex items-start">
-                        <svg class="w-5 h-5 text-purple-400 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        Mobile-first responsive design
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 class="font-semibold text-blue-400 mb-2">Technologies Used</h4>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Node.js</span>
-                      <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">React</span>
-                      <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">PostgreSQL</span>
-                      <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">AWS</span>
-                      <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Stripe</span>
-                    </div>
-                  </div>
+                <div>
+                  <h4 class="font-display font-semibold text-[var(--color-charcoal)] mb-4">Technical Highlights</h4>
+                  <ul class="space-y-3 text-[var(--color-grey-dark)]">
+                    <li class="flex items-start">
+                      <span class="font-mono text-sm text-[var(--color-taupe)] mr-2">•</span>
+                      <span>Real-time WebSocket draws</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="font-mono text-sm text-[var(--color-taupe)] mr-2">•</span>
+                      <span>PCI-compliant payment system</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="font-mono text-sm text-[var(--color-taupe)] mr-2">•</span>
+                      <span>Microservices architecture</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="font-mono text-sm text-[var(--color-taupe)] mr-2">•</span>
+                      <span>Auto-scaling infrastructure</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
               
-              <div class="bg-gradient-to-br from-purple-600/30 to-blue-600/30 p-12 flex items-center justify-center">
-                <div class="text-center">
-                  <div class="w-32 h-32 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <span class="text-5xl font-bold text-white">SC</span>
-                  </div>
-                  <p class="text-xl font-semibold text-gray-300">Sorteo Club</p>
-                  <p class="text-gray-400">Private Lottery Platform</p>
+              <div class="border-t border-[var(--color-pearl)] pt-6">
+                <p class="font-mono text-sm text-[var(--color-grey-medium)]">
+                  Stack: Node.js • React • PostgreSQL • Redis • AWS • Stripe • Docker
+                </p>
+              </div>
+            </div>
+            
+            <div class="md:col-span-2 bg-gradient-to-br from-[var(--color-cream-light)] to-[var(--color-pearl)] p-12 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-32 h-32 bg-[var(--color-cream)] border-2 border-[var(--color-taupe)] rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <span class="font-mono text-5xl font-bold text-[var(--color-taupe)]">SC</span>
                 </div>
+                <p class="font-display text-xl font-semibold text-[var(--color-charcoal)]">Sorteo Club</p>
+                <p class="text-[var(--color-grey-medium)]">Private Lottery Platform</p>
               </div>
             </div>
           </div>
@@ -95,118 +128,134 @@ import Navigation from '../components/Navigation.astro';
       </div>
     </section>
     
-    <!-- Other Projects -->
-    <section class="py-20 bg-gray-900">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">More Projects</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <!-- Project 1 -->
-          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition-all">
-            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+    <!-- Other Products -->
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          Products in Development
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)] hover:shadow-md transition-shadow duration-200">
+            <div class="mb-6">
+              <div class="w-12 h-12 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] flex items-center justify-center">
+                <svg class="w-6 h-6 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Enterprise Dashboard</h3>
-            <p class="text-gray-400 mb-4">Real-time analytics and monitoring platform for enterprise clients</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Vue.js</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Python</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Redis</span>
-            </div>
-          </div>
-          
-          <!-- Project 2 -->
-          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-all">
-            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-            <p class="text-gray-400 mb-4">Scalable marketplace solution with integrated payment systems</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Next.js</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">GraphQL</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">MongoDB</span>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Analytics Dashboard
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-4 leading-relaxed">
+              Real-time business intelligence platform for SMBs. Making enterprise-grade analytics accessible.
+            </p>
+            <div class="pt-4 border-t border-[var(--color-pearl)]">
+              <p class="font-mono text-xs text-[var(--color-grey-medium)] uppercase">
+                Status: Beta Testing
+              </p>
             </div>
           </div>
           
-          <!-- Project 3 -->
-          <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-cyan-500 transition-all">
-            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+          <!-- Product 2 -->
+          <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)] hover:shadow-md transition-shadow duration-200">
+            <div class="mb-6">
+              <div class="w-12 h-12 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] flex items-center justify-center">
+                <svg class="w-6 h-6 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Security Suite</h3>
-            <p class="text-gray-400 mb-4">Comprehensive security monitoring and threat detection system</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Go</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Kubernetes</span>
-              <span class="px-2 py-1 bg-gray-700 rounded text-xs">Elastic</span>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Invoice Automation
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-4 leading-relaxed">
+              AI-powered invoicing and payment collection for freelancers and agencies.
+            </p>
+            <div class="pt-4 border-t border-[var(--color-pearl)]">
+              <p class="font-mono text-xs text-[var(--color-grey-medium)] uppercase">
+                Status: Development
+              </p>
+            </div>
+          </div>
+          
+          <!-- Product 3 -->
+          <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)] hover:shadow-md transition-shadow duration-200">
+            <div class="mb-6">
+              <div class="w-12 h-12 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)] flex items-center justify-center">
+                <svg class="w-6 h-6 text-[var(--color-taupe)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
+              Security Monitor
+            </h3>
+            <p class="text-[var(--color-grey-medium)] mb-4 leading-relaxed">
+              Automated security scanning and compliance monitoring for web applications.
+            </p>
+            <div class="pt-4 border-t border-[var(--color-pearl)]">
+              <p class="font-mono text-xs text-[var(--color-grey-medium)] uppercase">
+                Status: Planning
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- Technologies -->
+    <!-- Success Metrics -->
     <section class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Technologies We Master</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">JavaScript</p>
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
+          By The Numbers
+        </h2>
+        
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div>
+            <p class="font-mono text-4xl font-bold text-[var(--color-taupe)] mb-2">5+</p>
+            <p class="text-[var(--color-grey-medium)]">Products Launched</p>
           </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">TypeScript</p>
+          <div>
+            <p class="font-mono text-4xl font-bold text-[var(--color-taupe)] mb-2">50K+</p>
+            <p class="text-[var(--color-grey-medium)]">Active Users</p>
           </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">React</p>
+          <div>
+            <p class="font-mono text-4xl font-bold text-[var(--color-taupe)] mb-2">99.9%</p>
+            <p class="text-[var(--color-grey-medium)]">Uptime Average</p>
           </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">Node.js</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">Python</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">AWS</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">Docker</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">PostgreSQL</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">MongoDB</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">GraphQL</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">Redis</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition-all">
-            <p class="font-medium">Kubernetes</p>
+          <div>
+            <p class="font-mono text-4xl font-bold text-[var(--color-taupe)] mb-2">$2M+</p>
+            <p class="text-[var(--color-grey-medium)]">Revenue Generated</p>
           </div>
         </div>
       </div>
     </section>
     
     <!-- CTA -->
-    <section class="py-20 bg-gradient-to-r from-blue-600/20 to-purple-600/20">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Have a Project in Mind?</h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Let's work together to create something amazing
+    <section class="py-20 bg-[var(--color-cream-light)]">
+      <div class="container mx-auto px-6 text-center max-w-4xl">
+        <h2 class="text-3xl font-display font-semibold mb-6 text-[var(--color-charcoal)]">
+          Have an Idea for a Product?
+        </h2>
+        <p class="text-xl text-[var(--color-grey-medium)] mb-10 max-w-2xl mx-auto">
+          Let's validate it together and build something users will love.
         </p>
-        <a href="/contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all">
-          Start Your Project
+        <a href="/contact" class="inline-block px-8 py-4 bg-[var(--color-charcoal)] text-[var(--color-cream)] rounded-md font-medium hover:bg-[var(--color-grey-dark)] transition-colors duration-200">
+          Discuss Your Idea
         </a>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  .font-display {
+    font-family: var(--font-display);
+  }
+</style>
