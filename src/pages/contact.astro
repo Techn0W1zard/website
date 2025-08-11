@@ -3,22 +3,22 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 ---
 
-<Layout title="Contact" description="Get in touch with TechnoWizard to discuss your next SaaS project">
+<Layout title="Contact" description="Get in touch with TechnoWizard - Connect with Daniel Ochoa">
   <Navigation />
 
-  <main class="pt-20">
+  <main class="pt-18">
     <!-- Hero Section -->
     <section class="py-20 bg-[var(--color-cream-light)]">
       <div class="container mx-auto px-6 max-w-4xl">
         <div class="text-center">
           <p class="font-mono text-sm text-[var(--color-taupe)] tracking-wider uppercase mb-4">
-            Contact Us
+            Contact
           </p>
           <h1 class="text-4xl md:text-5xl font-display font-bold text-[var(--color-charcoal)] mb-6">
-            Let's Build Together
+            Let's Connect
           </h1>
           <p class="text-xl text-[var(--color-grey-medium)] max-w-3xl mx-auto leading-relaxed">
-            Ready to launch your next SaaS product? Let's discuss your vision and create a roadmap to success.
+            Interested in my products, have feedback, or want to explore potential opportunities? I'd love to hear from you.
           </p>
         </div>
       </div>
@@ -26,7 +26,7 @@ import Navigation from '../components/Navigation.astro';
 
     <!-- Contact Form Section -->
     <section class="py-20">
-      <div class="container mx-auto px-6 max-w-6xl">
+      <div class="container mx-auto px-6 max-w-5xl">
         <div class="grid lg:grid-cols-5 gap-12">
           <!-- Contact Info -->
           <div class="lg:col-span-2">
@@ -34,7 +34,7 @@ import Navigation from '../components/Navigation.astro';
               Get in Touch
             </h2>
             <p class="text-[var(--color-grey-medium)] mb-8 leading-relaxed">
-              Whether you have a product idea, need technical guidance, or want to explore partnership opportunities, we're here to help. Reach out and let's start the conversation.
+              Whether you're interested in my current products, have ideas for collaboration, or just want to connect, feel free to reach out.
             </p>
 
             <div class="space-y-6 mb-10">
@@ -46,7 +46,7 @@ import Navigation from '../components/Navigation.astro';
                 </div>
                 <div class="ml-4">
                   <h3 class="font-display font-medium mb-1 text-[var(--color-charcoal)]">Email</h3>
-                  <p class="text-[var(--color-grey-medium)]">hello@technowizard.dev</p>
+                  <p class="text-[var(--color-grey-medium)]">hello@technowizard.io</p>
                 </div>
               </div>
 
@@ -58,8 +58,8 @@ import Navigation from '../components/Navigation.astro';
                   </svg>
                 </div>
                 <div class="ml-4">
-                  <h3 class="font-display font-medium mb-1 text-[var(--color-charcoal)]">Location</h3>
-                  <p class="text-[var(--color-grey-medium)]">Austin, TX • Remote-First</p>
+                  <h3 class="font-display font-medium mb-1 text-[var(--color-charcoal)]">Based In</h3>
+                  <p class="text-[var(--color-grey-medium)]">Austin, TX</p>
                 </div>
               </div>
 
@@ -71,20 +71,20 @@ import Navigation from '../components/Navigation.astro';
                 </div>
                 <div class="ml-4">
                   <h3 class="font-display font-medium mb-1 text-[var(--color-charcoal)]">Response Time</h3>
-                  <p class="text-[var(--color-grey-medium)]">Within 12 hours</p>
+                  <p class="text-[var(--color-grey-medium)]">Usually within 24 hours</p>
                 </div>
               </div>
             </div>
 
             <div class="p-6 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)]">
-              <h4 class="font-display font-medium mb-2 text-[var(--color-charcoal)]">
-                What to Expect
+              <h4 class="font-display font-medium mb-3 text-[var(--color-charcoal)]">
+                What I'm Open To
               </h4>
               <ul class="space-y-2 text-sm text-[var(--color-grey-medium)]">
-                <li>• Initial consultation within 24 hours</li>
-                <li>• Detailed project proposal within 3-5 days</li>
-                <li>• Transparent pricing with no hidden costs</li>
-                <li>• Direct communication throughout the project</li>
+                <li>• Product feedback and feature suggestions</li>
+                <li>• Partnership opportunities</li>
+                <li>• General networking and connections</li>
+                <li>• Questions about my products or approach</li>
               </ul>
             </div>
           </div>
@@ -120,58 +120,31 @@ import Navigation from '../components/Navigation.astro';
                 </div>
 
                 <div>
-                  <label for="company" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Company</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
-                    placeholder="Your company (optional)"
-                  />
-                </div>
-
-                <div>
-                  <label for="project-type" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Project Type</label>
+                  <label for="subject" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Subject</label>
                   <select
-                    id="project-type"
-                    name="project-type"
+                    id="subject"
+                    name="subject"
                     required
                     class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
                   >
-                    <option value="">Select project type</option>
-                    <option value="new-saas">New SaaS Product</option>
-                    <option value="mvp">MVP Development</option>
-                    <option value="consulting">Product Strategy</option>
-                    <option value="scaling">Scale Existing Product</option>
-                    <option value="other">Other</option>
+                    <option value="">What's this about?</option>
+                    <option value="product-feedback">Product Feedback</option>
+                    <option value="partnership">Partnership Inquiry</option>
+                    <option value="networking">Networking / Connection</option>
+                    <option value="question">General Question</option>
+                    <option value="other">Something Else</option>
                   </select>
                 </div>
 
                 <div>
-                  <label for="budget" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Budget Range</label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
-                  >
-                    <option value="">Select budget range</option>
-                    <option value="under-25k">Under $25k</option>
-                    <option value="25k-50k">$25k - $50k</option>
-                    <option value="50k-100k">$50k - $100k</option>
-                    <option value="100k-plus">$100k+</option>
-                    <option value="discuss">Let's discuss</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label for="message" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Project Details</label>
+                  <label for="message" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Message</label>
                   <textarea
                     id="message"
                     name="message"
-                    rows="5"
+                    rows="6"
                     required
                     class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors resize-none text-[var(--color-charcoal)]"
-                    placeholder="Tell us about your project idea, goals, and timeline..."
+                    placeholder="Tell me what's on your mind..."
                   ></textarea>
                 </div>
 
@@ -198,41 +171,41 @@ import Navigation from '../components/Navigation.astro';
         <h2 class="text-3xl font-display font-semibold text-center mb-16 text-[var(--color-charcoal)]">
           Common Questions
         </h2>
-        
+
         <div class="space-y-6">
           <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)]">
             <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
-              How long does it take to launch a SaaS product?
+              Do you take on custom development projects?
             </h3>
             <p class="text-[var(--color-grey-medium)] leading-relaxed">
-              For an MVP, we typically deliver in 6-12 weeks. Full-featured products can take 3-6 months depending on complexity. We'll provide a detailed timeline after understanding your requirements.
+              No, I don't do consulting or custom development work. TechnoWizard is focused entirely on building and launching my own products.
             </p>
           </div>
 
           <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)]">
             <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
-              Do you help with go-to-market strategy?
+              Can I get early access to your products?
             </h3>
             <p class="text-[var(--color-grey-medium)] leading-relaxed">
-              Absolutely. We don't just build products – we help you launch them successfully. This includes market positioning, pricing strategy, and launch planning.
+              Possibly! I sometimes offer early access to people who reach out with genuine interest. Send me a message about what you're looking for.
             </p>
           </div>
 
           <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)]">
             <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
-              What's your approach to product development?
+              Are you open to partnerships or collaborations?
             </h3>
             <p class="text-[var(--color-grey-medium)] leading-relaxed">
-              We focus on revenue-first development. Every feature we build is evaluated for its impact on user value and business growth. We prioritize speed to market with scalable foundations.
+              I'm always interested in hearing about potential partnerships that align with my product goals. Feel free to reach out with specific ideas.
             </p>
           </div>
 
           <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)]">
             <h3 class="text-xl font-display font-semibold mb-3 text-[var(--color-charcoal)]">
-              Do you provide ongoing support after launch?
+              How can I stay updated on new products?
             </h3>
             <p class="text-[var(--color-grey-medium)] leading-relaxed">
-              Yes, we offer various support packages including bug fixes, feature enhancements, performance monitoring, and scaling assistance as your user base grows.
+              The best way is to check back on this site periodically or reach out to join my informal updates list. I share major product launches and milestones.
             </p>
           </div>
         </div>
@@ -259,7 +232,7 @@ import Navigation from '../components/Navigation.astro';
     // Simulate form submission (replace with actual API call)
     setTimeout(() => {
       // Success state
-      statusText.textContent = 'Message sent successfully! We\'ll get back to you within 12 hours.';
+      statusText.textContent = 'Message sent! I\'ll get back to you soon.';
       statusText.className = 'text-center text-sm text-green-600';
       form.reset();
 
@@ -275,7 +248,7 @@ import Navigation from '../components/Navigation.astro';
   .font-mono {
     font-family: var(--font-mono);
   }
-  
+
   .font-display {
     font-family: var(--font-display);
   }
