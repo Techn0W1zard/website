@@ -89,76 +89,76 @@ import Navigation from '../components/Navigation.astro';
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Email Direct Contact -->
           <div class="lg:col-span-3">
-            <div class="bg-[var(--color-cream)] p-8 rounded-lg border border-[var(--color-pearl)]">
-              <form id="contact-form" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label for="name" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
-                      placeholder="Your name"
-                    />
+            <div class="bg-[var(--color-cream)] p-10 rounded-lg border border-[var(--color-pearl)]">
+              <div class="text-center">
+                <h3 class="text-2xl font-display font-semibold mb-6 text-[var(--color-charcoal)]">
+                  Send Me an Email
+                </h3>
+                
+                <div class="mb-8">
+                  <p class="text-[var(--color-grey-medium)] mb-4">
+                    The best way to reach me is via email:
+                  </p>
+                  
+                  <div class="inline-flex items-center justify-center p-4 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-lg">
+                    <span class="email-address text-xl font-mono text-[var(--color-charcoal)]" 
+                          data-user="hello" 
+                          data-domain="technowizard" 
+                          data-tld="io">
+                    </span>
+                    <button 
+                      id="copy-email" 
+                      class="ml-3 p-2 text-[var(--color-taupe)] hover:text-[var(--color-charcoal)] transition-colors"
+                      title="Copy email address"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                      </svg>
+                    </button>
                   </div>
-
-                  <div>
-                    <label for="email" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
-                      placeholder="your@email.com"
-                    />
+                  
+                  <div id="copy-feedback" class="hidden mt-2">
+                    <p class="text-sm text-green-600">Email address copied!</p>
                   </div>
                 </div>
 
-                <div>
-                  <label for="subject" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Subject</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors text-[var(--color-charcoal)]"
-                  >
-                    <option value="">What's this about?</option>
-                    <option value="product-feedback">Product Feedback</option>
-                    <option value="partnership">Partnership Inquiry</option>
-                    <option value="networking">Networking / Connection</option>
-                    <option value="question">General Question</option>
-                    <option value="other">Something Else</option>
-                  </select>
+                <div class="space-y-4 text-left max-w-md mx-auto">
+                  <div class="flex items-start">
+                    <div class="w-6 h-6 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span class="text-xs font-mono text-[var(--color-taupe)]">1</span>
+                    </div>
+                    <p class="ml-3 text-sm text-[var(--color-grey-medium)]">
+                      <strong>Product feedback</strong> - Tell me what you think about my current projects
+                    </p>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="w-6 h-6 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span class="text-xs font-mono text-[var(--color-taupe)]">2</span>
+                    </div>
+                    <p class="ml-3 text-sm text-[var(--color-grey-medium)]">
+                      <strong>Partnership ideas</strong> - Have a collaboration in mind?
+                    </p>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="w-6 h-6 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span class="text-xs font-mono text-[var(--color-taupe)]">3</span>
+                    </div>
+                    <p class="ml-3 text-sm text-[var(--color-grey-medium)]">
+                      <strong>General networking</strong> - Just want to connect and chat
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <label for="message" class="block text-sm font-medium mb-2 text-[var(--color-charcoal)]">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    required
-                    class="w-full px-4 py-3 bg-[var(--color-cream-light)] border border-[var(--color-pearl)] rounded-md focus:outline-none focus:border-[var(--color-taupe)] transition-colors resize-none text-[var(--color-charcoal)]"
-                    placeholder="Tell me what's on your mind..."
-                  ></textarea>
+                <div class="mt-8 p-4 bg-[var(--color-cream-light)] rounded-lg border border-[var(--color-pearl)]">
+                  <p class="text-sm text-[var(--color-grey-medium)]">
+                    <strong>Response time:</strong> Usually within 24 hours
+                  </p>
                 </div>
-
-                <button
-                  type="submit"
-                  class="w-full px-6 py-4 bg-[var(--color-charcoal)] text-[var(--color-cream)] rounded-md font-medium hover:bg-[var(--color-grey-dark)] transition-colors duration-200"
-                >
-                  Send Message
-                </button>
-
-                <div id="form-status" class="hidden">
-                  <p class="text-center text-sm"></p>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -215,32 +215,51 @@ import Navigation from '../components/Navigation.astro';
 </Layout>
 
 <script>
-  const form = document.getElementById('contact-form') as HTMLFormElement;
-  const formStatus = document.getElementById('form-status');
-  const statusText = formStatus?.querySelector('p');
+  // Assemble email address from data attributes
+  document.addEventListener('DOMContentLoaded', () => {
+    const emailElement = document.querySelector('.email-address');
+    if (emailElement) {
+      const user = emailElement.getAttribute('data-user');
+      const domain = emailElement.getAttribute('data-domain');
+      const tld = emailElement.getAttribute('data-tld');
+      
+      if (user && domain && tld) {
+        emailElement.textContent = `${user}@${domain}.${tld}`;
+      }
+    }
 
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    if (!formStatus || !statusText) return;
-
-    // Show loading state
-    formStatus.classList.remove('hidden');
-    statusText.textContent = 'Sending message...';
-    statusText.className = 'text-center text-sm text-gray-400';
-
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-      // Success state
-      statusText.textContent = 'Message sent! I\'ll get back to you soon.';
-      statusText.className = 'text-center text-sm text-green-600';
-      form.reset();
-
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        formStatus.classList.add('hidden');
-      }, 5000);
-    }, 1500);
+    // Copy email functionality
+    const copyButton = document.getElementById('copy-email');
+    const copyFeedback = document.getElementById('copy-feedback');
+    
+    copyButton?.addEventListener('click', async () => {
+      const emailElement = document.querySelector('.email-address');
+      const emailText = emailElement?.textContent;
+      
+      if (emailText) {
+        try {
+          await navigator.clipboard.writeText(emailText);
+          copyFeedback?.classList.remove('hidden');
+          
+          setTimeout(() => {
+            copyFeedback?.classList.add('hidden');
+          }, 2000);
+        } catch (err) {
+          // Fallback for older browsers
+          const textArea = document.createElement('textarea');
+          textArea.value = emailText;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          
+          copyFeedback?.classList.remove('hidden');
+          setTimeout(() => {
+            copyFeedback?.classList.add('hidden');
+          }, 2000);
+        }
+      }
+    });
   });
 </script>
 
